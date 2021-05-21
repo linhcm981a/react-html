@@ -42,6 +42,80 @@ class App extends React.Component {
 				</ul>
 
 			</div>
+
+		  <div>
+        {/*right-menu---------*/}
+        <div className="right-menu">
+          <a href="javascript:void(0);" className="search">
+            <i className="fas fa-search" />
+          </a>
+          <a href="javascript:void(0);" className="user">
+            <i className="far fa-user" />
+          </a>
+          <a href="#">
+            <i className="fas fa-shopping-cart">
+              <span className="num-cart-product">0</span>
+            </i>
+          </a>
+        </div>
+        {/*search-bar---------------------------------*/}
+        <div className="search-bar">
+          {/*search-input-----*/}
+          <div className="search-input">
+            <input type="text" placeholder="Search For Product" name="search" />
+            {/*cancel-btn-*/}
+            <a href="javascript:void(0);" className="search-cancel">
+              <i className="fas fa-times" />
+            </a>
+          </div>
+        </div>
+        {/*--login-and-sign-up-from--*/}
+        <div className="form">
+          {/*login------*/}
+          <div className="login-form">
+            {/*cancel-btn--*/}
+            <a href="#" className="form-cancel">
+              <i className="fas fa-times" />
+            </a>
+            <strong>Log In</strong>
+            {/*inputs*/}
+            <form>
+              <input type="email" name="email" placeholder="Example@gmail.com" required />
+              <input type="password" name="password" placeholder="Password" required />
+              <input type="submit" defaultValue="Log In" />
+            </form>
+            {/*-forget-and-sign-up-btn--*/}
+            <div className="form-btns">
+              <a href="#" className="forget">Forget your Password ?</a>
+              <a href="#" className="sign-up-btn">Create Account</a>
+            </div>
+          </div>
+          {/*Sign-up------*/}
+          <div className="sign-up-form">
+            {/*cancel-btn--*/}
+            <a href="#" className="form-cancel">
+              <i className="fas fa-times" />
+            </a>
+            <strong>Sign Up</strong>
+            {/*inputs*/}
+            <form>
+              <input type="text" name="full name " placeholder="full name " required />
+              <input type="email" name="email" placeholder="Example@gmail.com" required />
+              <input type="password" name="password" placeholder="Password" required />
+              <input type="submit" defaultValue="Sign up" />
+            </form>
+            {/*-forget-and-sign-up-btn--*/}
+            <div className="form-btns">
+              <a href="#" className="alredy-acount">da co tai khoan ?</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
 		</nav>
 		<div className="home-wrapper">
 			<div className="container">
